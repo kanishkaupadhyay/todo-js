@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(145deg, #12e4eb, #f51d15);
+} 
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+}
+
+#newtask {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+#newtask input {
+    width: 70%;
+    height: 70%;
+    height: 3rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 600;
+    position: relative;
+    border-radius: 5px;
+}
+#newtask input:focus {
+    outline: none;
+    border-color: #e9433d;
+}
+
+#newtask button {
+    position: relative;
+    color: white;
+    float: right;
+    width: 20%;
+    height: 3rem;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #e9433d;
+    border: none;
+    cursor: default;
+}
+
+#tasks {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: relative;
+}
+
+.task {
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+}
+
+.task span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.task button {
+    background-color:#e9433d;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
